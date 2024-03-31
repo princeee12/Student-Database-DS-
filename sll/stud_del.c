@@ -8,7 +8,7 @@ void stud_del(SLL **ptr)
 	printf("N/n:enter name to del\n");
 	scanf(" %c",&opp);
 	switch(opp)
-	{ 
+	{
 		case 'R':
 		case 'r':del_rollno(ptr);break;
 		case 'N':
@@ -29,7 +29,6 @@ void del_rollno(SLL **ptr)
 
 	printf("Enter the rollno to delete\n");
 	scanf("%d",&rollno);
-
 	while(del)
 	{
 		if(del->rollno == rollno)
@@ -39,7 +38,7 @@ void del_rollno(SLL **ptr)
 			else
 				prev->next = del ->next;
 
-			printf("\033[031mNode deleted\n\033[0m");
+			printf("\033[031mRollno deleted\n\033[0m");
 			free(del);
 			return;
 		}
@@ -61,7 +60,6 @@ void del_name(SLL **ptr)
 	SLL *del=*ptr,*prev;
 	char name[20];
 	scanf(" %s",name);
-
 	int flag=0;
 	while(del)
 	{
@@ -85,7 +83,7 @@ void del_name(SLL **ptr)
 					*ptr=del->next;
 				else
 					prev->next = del ->next;
-				printf("\033[031mNode deleted\n\033[0m");
+				printf("\033[031mRecord deleted\n\033[0m");
 
 				free(del);
 				return;

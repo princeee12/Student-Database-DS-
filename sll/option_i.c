@@ -1,4 +1,3 @@
-
 #include "header.h"
 
 void delete_all(SLL **ptr)
@@ -15,5 +14,5 @@ void delete_all(SLL **ptr)
 		free(del);
 		del=*ptr;
 	}
-		printf("\033[31m Node deleted\n\033[0m");
+	printf("\033[31m All students data deleted\n\033[0m");
 }

@@ -24,8 +24,8 @@ void reverse_link(SLL **ptr)
 		*ptr=p[c-1];
 
 	}
+	printf("\033[32m All records reversed\n\033[0m");
 }
-
 
 int count_node(SLL *ptr)
 {
@@ -38,3 +38,4 @@ int count_node(SLL *ptr)
 	}
 	return count;
 }
+

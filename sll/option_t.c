@@ -22,12 +22,11 @@ void sort_nodename(SLL *ptr)
 		printf("\033[31m No node found\n\033[0m");
 		return;
 	}
-
 	SLL *p1=ptr,*p2,t;
 	int i,j,c=count_node(ptr);
 
 	for(i=0;i<c-1;i++)
-	{       
+	{
 		p2=p1->next;
 
 		for(j=0;j<c-i-1;j++)
@@ -48,6 +47,7 @@ void sort_nodename(SLL *ptr)
 		}
 		p1=p1->next;
 	}
+	printf("\033[32m The list is sorted\n\033[0m");
 
 }
 
@@ -63,7 +63,7 @@ void sort_nodepercent(SLL *ptr)
 	int i,j,c=count_node(ptr);
 
 	for(i=0;i<c-1;i++)
-	{       
+	{
 		p2=p1->next;
 
 		for(j=0;j<c-i-1;j++)
@@ -85,5 +85,6 @@ void sort_nodepercent(SLL *ptr)
 		p1=p1->next;
 	}
 
+	printf("\033[32m The list is sorted\n\033[0m");
 }
 

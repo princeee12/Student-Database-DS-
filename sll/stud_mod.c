@@ -1,6 +1,6 @@
 #include "header.h"
 
-void modd_rollno(SLL **);
+void mod_rollno(SLL **);
 void stud_mod(SLL **ptr)
 {
 	int num;
@@ -44,8 +44,6 @@ void mod_rollno(SLL **ptr)
 		printf("\033[0;31mNo node found\033[0m\n");
 
 }
-
-
 void mod_name(SLL **ptr)
 {
 	SLL *node=*ptr;
@@ -108,7 +106,6 @@ void mod_marks(SLL **ptr)
 
 	if(flag == 0)
 		printf("\033[0;31mNo node found\033[0m\n");
-
 	if(flag == 1)
 	{
 		while(node)
@@ -127,5 +124,3 @@ void mod_marks(SLL **ptr)
 	if(flag > 1)
 		mod_rollno(&node);
 }
-
-

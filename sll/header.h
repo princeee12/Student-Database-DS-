@@ -26,7 +26,6 @@ void mod_rollno(SLL **);
 void mod_name(SLL **);
 void mod_marks(SLL **);
 
-
 void read_file(SLL **);
 
 void option_e(SLL *);
@@ -38,3 +37,4 @@ void reverse_link(SLL **);
 int count_node(SLL *);
 void sort_nodename(SLL *);
 void sort_nodepercent(SLL *);
+void sort_noderollno(SLL *);

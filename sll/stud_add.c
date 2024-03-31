@@ -26,12 +26,11 @@ void stud_add(SLL **ptr) {
 	SLL *temp = *ptr;
 
 	SLL *prev = 0;
-
 	while(temp != 0) {
 
 		if(temp -> rollno != roll_no){
 
-			break;	
+			break;
 		}
 
 		roll_no++;
@@ -50,7 +49,7 @@ void stud_add(SLL **ptr) {
 
 		*ptr = new;
 
-	} 
+	}
 
 	else{
 
@@ -59,38 +58,3 @@ void stud_add(SLL **ptr) {
 		prev -> next = new;
 	}
 }
-
-/*void stud_add(SLL **ptr)
-{
-	int least=1,flag;
-	SLL *node=*ptr;
-
-
-	while (node) {
-		if (node->rollno == least)  
-			least++;
-		else 
-			break;
-		node = node->next;
-	}
-
-
-	SLL *new=malloc(sizeof(SLL)),*last;
-	printf("Enter the name and percentage\n");
-	new->rollno=least;
-	scanf(" %s %f",new->name,&new->percent);
-	new->next=0;
-
-	if(*ptr==0)
-		*ptr=new;
-
-	else
-	{
-		last=*ptr;
-		while(last->next)
-			last=last->next;
-		last->next = new;
-	}
-
-}
-*/
